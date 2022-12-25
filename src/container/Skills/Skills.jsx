@@ -1,14 +1,14 @@
 import React, {useState, useEffect} from 'react';
 import {Tooltip as ReactTooltip} from 'react-tooltip';
 import {motion} from 'framer-motion'
-import {AppWrap} from '../../wrapper';
+import {AppWrap,  MotionWrap} from '../../wrapper';
 import {urlFor, client} from '../../client'
 
 import './Skills.scss'
 
 const Skills = () => {
 
-  const [experience, setExperience] = useState([]);
+  const [experiences, setExperience] = useState([]);
   const [skills, setSkills] = useState([])
 
   useEffect(() => {
@@ -47,7 +47,7 @@ const Skills = () => {
 
 
       <motion.div className='app__skills-exp'>
-        {experience.map((experience) => (
+        {experiences.map((experience) => (
 
           <motion.div
           className='app__skills-exp-item'
@@ -96,4 +96,8 @@ const Skills = () => {
   )
 }
 
-export default AppWrap(Skills, 'skills')
+export default AppWrap(
+  MotionWrap(Skills, 'app__skills')
+  
+  , 'skills', "app__whitebg"
+  );
