@@ -1,7 +1,10 @@
+//https://www.youtube.com/watch?v=3HNyXCPDQ7Q
+
 import React, {useState, useEffect} from 'react'
 import './About.scss';
 import {motion} from 'framer-motion'
 import {images} from '../../constants'
+import { urlFor, client } from '../../client';
 
 const abouts =[
   {title: 'Web Development', description: 'I am a Good Web Developer', imgUrl: images.about01},
@@ -10,6 +13,16 @@ const abouts =[
   {title: 'Web Animations', description: 'I am a Good Web Developer', imgUrl: images.about04},
 ]
 const About = () => {
+
+  // const [abouts, setAbouts] = useState([]);
+  // useEffect(() => {
+  //  const query = '*[_type == "abouts"]';
+  //  client.fetch(query).then((data) =>{
+  //     setAbouts(data);
+  //  })
+  // }, []);
+  
+
   return (
     <>
     <h2 className='head-text'>I know That 
