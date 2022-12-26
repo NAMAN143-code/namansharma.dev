@@ -80,6 +80,7 @@ const Work = () => {
                 </a>
 
                 <a href={work.codeLink} target = "_blank" rel="noreferrer">
+                  {console.log(work.codeLink)}
                   <motion.div
                   whileInView={{scale: [0,1]}}
                   whileHover={{scale:[1,0.9]}}

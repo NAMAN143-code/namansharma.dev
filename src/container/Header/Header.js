@@ -20,7 +20,7 @@ const Header = () => {
     <div className='app__header app__flex'>
       <motion.div
       whileInView={{x:[-100,0], opacity:[0,1]}}
-      transition={{duration:1}}
+      transition={{duration:0.5}}
       className="app__header-info"      
       >
 
@@ -49,13 +49,13 @@ const Header = () => {
 
       <motion.div
       whileInView={{opacity:[0,1]}}
-      transition={{duration:1, delayChildren:2}}
+      transition={{duration: 0.5, delayChildren:0.5}}
       className="app__header-img"           
       >
 
-        <img src={images.profile} alt="profile_bg" />
+        <img src={images.profile2} alt="profile_bg" />
         <motion.img
-        whileInView={{sclare:[0,1]}}
+        whileInView={{scale:[0,1]}}
         transition={{duration:1, ease:'easeInOut'}}
         src={images.circle}
         alt="profile_circle"
@@ -74,7 +74,7 @@ const Header = () => {
         {[images.flutter, images.redux, images.sass].map((circle, index) => (
           <div className='circle-cmp app__flex' key={`circle-${index}`}>
 
-            <img src={circle} alt="circle" />
+            <img src={circle} alt="profile_bg" />
           </div>
         ))}
 
