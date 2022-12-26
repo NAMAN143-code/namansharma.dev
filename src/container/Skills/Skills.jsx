@@ -37,8 +37,9 @@ const Skills = () => {
           key={skill.name}          
           >
             <div className='app__flex' style={{backgroundColor: skill.bgColor}}>
-              <img src={urlFor(skill.icon).url()} alt={skill.name} />
-              {console.log('it is working tilll here ')}
+              <img src={urlFor(skill.icon)} alt={skill.name} />
+
+              {console.log(skill)}
             </div>
             <p className='p-text'>{skill.name}</p>
 
