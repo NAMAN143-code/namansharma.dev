@@ -11,12 +11,12 @@ const SocialMedia = () => {
             </a>
         </div>
         <div>
-          <a href='https://twitter.com/sharmanaman6'>
+          <a href='https://www.facebook.com/profile.php?id=100071801133372'>
             <FaFacebookF />
           </a>
         </div>
         <div>
-          <a href='https://twitter.com/sharmanaman6'>
+          <a href='https://www.instagram.com/__naman__sharma___/'>
             <BsInstagram />
             </a>  
         </div>
