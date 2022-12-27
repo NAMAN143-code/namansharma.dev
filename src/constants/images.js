@@ -35,10 +35,13 @@ import bolt from '../assets/bolt.png';
 import nb from '../assets/nb.png';
 import skype from '../assets/skype.png';
 import spotify from '../assets/spotify.png';
-
+import express from '../assets/expressjs.png'
+import mongodb from '../assets/mongodb.png'
 
 export default {
     email,
+    mongodb,
+    express,
     profile2,
     mobile,
     api,
