@@ -16,7 +16,15 @@ const Skills = () => {
     const skillsQuery = '*[_type == "skills"]';
 
     client.fetch(query).then((data) => {
-      setExperience(data);
+      const extra = {
+    year: '2025',
+    works: [{
+      name: 'Senior Developer',
+      company: 'Acme Corp',
+      desc: 'Built the next-gen widget API in React & Node.',
+    }],
+  };
+  setExperience([...data, extra]);
     })
 
     client.fetch(skillsQuery).then((data) => {
