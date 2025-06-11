@@ -51,7 +51,6 @@ const Skills = () => {
               >
                 <img src={urlFor(skill.icon)} alt={skill.name} />
               </div>
-              <p className="p-text">{skill.name}</p>
             </motion.div>
           ))}
         </motion.div>
