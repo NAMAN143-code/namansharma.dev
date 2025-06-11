@@ -17,11 +17,11 @@ const Skills = () => {
 
     client.fetch(query).then((data) => {
       const extra = {
-    year: '2025',
+    year: '2023-Present',
     works: [{
-      name: 'Senior Developer',
-      company: 'Acme Corp',
-      desc: 'Built the next-gen widget API in React & Node.',
+      name: 'Application Developer',
+      company: 'Shoppers Drug Mart',
+      desc: 'Developed and Optimized Spring Boot applications for the biggest healthcare application of Canada, HealthWatch. Promptly fixed critical production level defects. Created and Authored common package releases deployable to both cloud and non-Cloud environments. Worked on optimizations mainly, alongwith new initiatives.',
     }],
   };
   setExperience([...data, extra]);
